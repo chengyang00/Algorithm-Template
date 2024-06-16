@@ -4,7 +4,7 @@
 class Fenwick:
     __slots__ = 'f'
 
-    def __init__(self, n: int): # 这里的n是数据数组的长度+1，因为树状数组的位置0没用到
+    def __init__(self, n: int): # 这里的n是数据数组的长度+1（因为树状数组的位置0没用到）
         self.f = [0] * n
 
     def update(self, i: int, val: int) -> None:
